@@ -104,11 +104,9 @@ footer {
     color: white;
     text-align: center;
     padding: 15px;
+    pointer-events: auto;
 }
 
-footer p {
-    margin: 0;
-}
 
 /* Efeito de ondas cobrindo toda a tela */
 .wave-bg::before {
