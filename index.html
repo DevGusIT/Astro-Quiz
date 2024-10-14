@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz de Astronomia</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&family=Poppins:wght@300;400&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="wave-bg">
+        <header>
+            <h1>Quiz de Astronomia</h1>
+        </header>
+
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Sobre</a></li>
+                <li><a href="#">Contato</a></li>
+            </ul>
+        </nav>
+
+        <main>
+            <h2>Responda as perguntas sobre astronomia!</h2>
+
+            <form id="quizForm">
+                <div class="question">
+                    <p>1. Qual é o maior planeta do Sistema Solar?</p>
+                    <input type="radio" name="q1" value="Errado" id="q1a1">
+                    <label for="q1a1">Terra</label><br>
+                    <input type="radio" name="q1" value="Errado" id="q1a2">
+                    <label for="q1a2">Marte</label><br>
+                    <input type="radio" name="q1" value="Certo" id="q1a3">
+                    <label for="q1a3">Júpiter</label><br>
+                    <input type="radio" name="q1" value="Errado" id="q1a4">
+                    <label for="q1a4">Saturno</label><br>
+                    <input type="radio" name="q1" value="Errado" id="q1a5">
+                    <label for="q1a5">Netuno</label><br>
+                    <button type="button" onclick="verificarResposta('q1', 1)">Verificar Resposta</button>
+                    <p id="resultado1"></p>
+                </div>
+
+                <div class="question">
+                    <p>2. Quantos planetas há no Sistema Solar?</p>
+                    <input type="radio" name="q2" value="Errado" id="q2a1">
+                    <label for="q2a1">7</label><br>
+                    <input type="radio" name="q2" value="Certo" id="q2a2">
+                    <label for="q2a2">8</label><br>
+                    <input type="radio" name="q2" value="Errado" id="q2a3">
+                    <label for="q2a3">9</label><br>
+                    <input type="radio" name="q2" value="Errado" id="q2a4">
+                    <label for="q2a4">10</label><br>
+                    <input type="radio" name="q2" value="Errado" id="q2a5">
+                    <label for="q2a5">6</label><br>
+                    <button type="button" onclick="verificarResposta('q2', 2)">Verificar Resposta</button>
+                    <p id="resultado2"></p>
+                </div>
+
+                <div class="question">
+                    <p>3. Qual é a estrela mais próxima da Terra?</p>
+                    <input type="radio" name="q3" value="Certo" id="q3a1">
+                    <label for="q3a1">Sol</label><br>
+                    <input type="radio" name="q3" value="Errado" id="q3a2">
+                    <label for="q3a2">Alfa Centauri</label><br>
+                    <input type="radio" name="q3" value="Errado" id="q3a3">
+                    <label for="q3a3">Betelgeuse</label><br>
+                    <input type="radio" name="q3" value="Errado" id="q3a4">
+                    <label for="q3a4">Proxima Centauri</label><br>
+                    <input type="radio" name="q3" value="Errado" id="q3a5">
+                    <label for="q3a5">Rigel</label><br>
+                    <button type="button" onclick="verificarResposta('q3', 3)">Verificar Resposta</button>
+                    <p id="resultado3"></p>
+                </div>
+
+                <div class="question">
+                    <p>4. Qual planeta é conhecido como o "Planeta Vermelho"?</p>
+                    <input type="radio" name="q4" value="Errado" id="q4a1">
+                    <label for="q4a1">Vênus</label><br>
+                    <input type="radio" name="q4" value="Certo" id="q4a2">
+                    <label for="q4a2">Marte</label><br>
+                    <input type="radio" name="q4" value="Errado" id="q4a3">
+                    <label for="q4a3">Saturno</label><br>
+                    <input type="radio" name="q4" value="Errado" id="q4a4">
+                    <label for="q4a4">Mercúrio</label><br>
+                    <input type="radio" name="q4" value="Errado" id="q4a5">
+                    <label for="q4a5">Júpiter</label><br>
+                    <button type="button" onclick="verificarResposta('q4', 4)">Verificar Resposta</button>
+                    <p id="resultado4"></p>
+                </div>
+
+                <div class="question">
+                    <p>5. Qual é o satélite natural da Terra?</p>
+                    <input type="radio" name="q5" value="Certo" id="q5a1">
+                    <label for="q5a1">Lua</label><br>
+                    <input type="radio" name="q5" value="Errado" id="q5a2">
+                    <label for="q5a2">Deimos</label><br>
+                    <input type="radio" name="q5" value="Errado" id="q5a3">
+                    <label for="q5a3">Fobos</label><br>
+                    <input type="radio" name="q5" value="Errado" id="q5a4">
+                    <label for="q5a4">Ganimedes</label><br>
+                    <input type="radio" name="q5" value="Errado" id="q5a5">
+                    <label for="q5a5">Europa</label><br>
+                    <button type="button" onclick="verificarResposta('q5', 5)">Verificar Resposta</button>
+                    <p id="resultado5"></p>
+                </div>
+            </form>
+        </main>
+
+        <footer>
+            <p>Desenvolvido por Dani</p>
+        </footer>
+
+        <!-- Elemento do foguete -->
+        <div id="rocket-container">
+            <div id="rocket">
+                🚀
+            </div>
+            <div id="explosion">
+                💥
+            </div>
+            <p id="feedback-message"></p>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
